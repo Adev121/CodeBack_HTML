@@ -1,0 +1,48 @@
+/* External CSS file: takehome.styles.css */
+
+.menu {
+  margin: 1rem;
+  padding: 4px;
+}
+
+.dot,
+.square,
+.rect {
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-bottom: 4px; /* Default margin for all menu items */
+}
+
+.menu > .dot:last-child,
+.menu > .square:last-child,
+.menu > .rect:last-child {
+  margin-bottom: 0; /* Remove bottom margin from the last item */
+}
+
+.dot {
+  width: 1rem;
+  height: 1rem;
+  background-color: #424242;
+  border-radius: 50%;
+  transition: background-color 0.3s; /* Transition effect for hovering */
+}
+
+.square {
+  width: 1rem;
+  height: 1rem;
+  background-color: #424242;
+  transition: background-color 0.3s; /* Transition effect for hovering */
+}
+
+.rect {
+  width: 2.5rem;
+  height: 0.5rem;
+  background-color: #424242;
+  transition: background-color 0.3s; /* Transition effect for hovering */
+}
+
+/* Hover effect for all menu items */
+.menu:hover .dot,
+.menu:hover .square,
+.menu:hover .rect {
+  background-color: rgba(68, 240, 76, 0.4);
+}

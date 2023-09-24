@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  border: 3px red solid;
+  justify-content: space-between;
+}
+
+.container .logo {
+  line-height: 60px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  border: 4px rgb(6, 134, 240) solid;
+}
+
+.nav ul {
+  display: flex;
+  background-color: green;
+  line-height: 25px;
+  border: 4px blue solid;
+}
+
+.nav ul li {
+  list-style-type: none;
+  border: 2px black solid;
+  position: relative; /* Added to position dropdown */
+  padding: 20px 30px;
+}
+
+.nav ul li a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 20px 30px; /* Adjusted padding for better spacing */
+}
+
+.nav ul .submenu {
+  display: none;
+  position: absolute;
+  top: 65px; /* Position the dropdown below the parent item */
+  left: 0;
+  background-color: green;
+  width: 193px; /* Adjust as needed */
+  /* margin-right: 58px; */
+}
+.nav ul li:hover {
+  background-color: red;
+}
+.nav ul li:hover .submenu {
+  display: block; /* Show the submenu on hover */
+}
+/* .nav ul li:hover .submenu ul li {
+  cursor: pointer;
+  background-color: rebeccapurple;
+  color: red;
+} */
+
+.nav ul li .submenu li:hover {
+  transition: all 0.3s;
+  background-color: red;
+}

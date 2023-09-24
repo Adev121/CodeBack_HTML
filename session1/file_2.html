@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document1</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .box {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background-color: gray;
+        text-align: center;
+        border: 3px solid black;
+      }
+      .position {
+        background-color: orange;
+        z-index: -1;
+      }
+      .position #box1 {
+        background-color: red;
+        position: absolute;
+        left: 0px;
+      }
+      .position #box2 {
+        background-color: green;
+        position: absolute;
+        left: 100px;
+      }
+      .position #box3 {
+        background-color: yellow;
+        position: absolute;
+        left: 200px;
+      }
+      .position #box4 {
+        background-color: blue;
+        position: absolute;
+        left: 300px;
+      }
+
+      .position #box1 {
+        background-color: red;
+        position: absolute;
+        left: 0px;
+      }
+      .position #box2 {
+        background-color: green;
+        position: absolute;
+        left: 100px;
+      }
+      .position #box3 {
+        background-color: yellow;
+        position: absolute;
+        left: 200px;
+      }
+      .position #box4 {
+        background-color: blue;
+        position: absolute;
+        left: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <h1>Helliow This is file2.</h1> -->
+    <div class="position">
+      <div class="box" id="box1">box1</div>
+      <div class="box" id="box2">box2</div>
+      <div class="box" id="box3">box3</div>
+      <div class="box" id="box4">box4</div>
+    </div>
+  </body>
+</html>
